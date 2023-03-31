@@ -1,4 +1,3 @@
-# algorithms.py
 from typing import Callable
 
 
