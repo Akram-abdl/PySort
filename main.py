@@ -1,6 +1,6 @@
 import random
 import matplotlib.pyplot as plt
-from algorithm import SortingAlgorithm, bubble_sort, selection_sort, insertion_sort, merge_sort, quick_sort
+from algorithm import SortingAlgorithm, bubble_sort, selection_sort, insertion_sort, merge_sort, quick_sort, bogo_sort
 
 
 class SortingVisualizer:
@@ -27,6 +27,7 @@ def main():
         SortingAlgorithm("Insertion Sort", insertion_sort),
         SortingAlgorithm("Merge Sort", merge_sort),
         SortingAlgorithm("Quick Sort", quick_sort),
+        SortingAlgorithm("Bogo sort", bogo_sort),
     ]
 
     visualizer = SortingVisualizer()

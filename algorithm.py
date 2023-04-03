@@ -1,5 +1,5 @@
 from typing import Callable
-
+import random
 
 class SortingAlgorithm:
     def __init__(self, name: str, function: Callable):
@@ -93,3 +93,13 @@ def quick_sort(arr, visualize):
         return right
 
     _quick_sort(arr, 0, len(arr) - 1)
+
+
+
+def bogo_sort(arr, visualize):
+    def is_sorted(arr):
+        return all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1))
+
+    while not is_sorted(arr):
+        random.shuffle(arr)
+        visualize(arr)
